@@ -5,16 +5,16 @@ void exibeSaque(var saques, var saquesEfetivos, [String? mensagem = 'Saque:']) {
 }
 
 void exibeBloqueio(var bloqueios, var bloqueiosEfetivos,
-    [String? mensagem = 'Saque:']) {
+    [String? mensagem = 'Bloqueio:']) {
   var porcentagem = (bloqueiosEfetivos / bloqueios) * 100;
   print(
-      'Bloqueio: $bloqueiosEfetivos/$bloqueios (${porcentagem.toStringAsPrecision(3)}%)');
+      '$mensagem $bloqueiosEfetivos/$bloqueios (${porcentagem.toStringAsPrecision(3)}%)');
 }
 
-void exibeAtaque(var ataques, ataquesEfetivos, [String? mensagem = 'Saque:']) {
+void exibeAtaque(var ataques, ataquesEfetivos, [String? mensagem = 'Ataque:']) {
   var porcentagem = (ataquesEfetivos / ataques) * 100;
   print(
-      'Ataque: $ataquesEfetivos/$ataques (${porcentagem.toStringAsPrecision(3)}%)');
+      '$mensagem $ataquesEfetivos/$ataques (${porcentagem.toStringAsPrecision(3)}%)');
 }
 
 void calculandoEstatisticas(List<List<Object>> jogadores) {
