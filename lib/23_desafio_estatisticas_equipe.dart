@@ -43,8 +43,4 @@ void calculandoEstatisticas(List<List<Object>> jogadores) {
   exibeBloqueio(
       bloqueiosTotais, bloqueiosEfetivosTotais, 'Pontos de Bloqueio:');
   exibeAtaque(ataquesTotais, ataquesEfetivosTotais, 'Pontos de Ataque:');
-
-//  30/64 (46.9%)
-//  57/75 (76.0%)
-//  60/83 (72.3%)
 }
